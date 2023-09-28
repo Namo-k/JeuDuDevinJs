@@ -83,7 +83,7 @@ function Perdu(){
 }
 function Gagner(){
     let message = document.getElementById("message");
-    message.innerText="Bien joué !! \n Vous avez reussi en " + nbEssai + " essaies. ";
+    message.innerText="Bien joué !! \n Vous avez reussi en " + (ESSAIMAX - nbEssai) + " essaies. ";
     message.style.color = "green"
 }
 function reessai(){
