@@ -61,7 +61,7 @@ function verification(){
             --nbEssai;
             if(nbEssai == 0)  {
                 Perdu();
-                console.log("Perdu");
+                console.log("Perdu ! Le nombre a deviner est " + nbADeviner );
                 resetJeu();
             }
             else{  
@@ -78,7 +78,7 @@ function verification(){
 
 function Perdu(){
     let message = document.getElementById("message");
-    message.innerText="Perdu";
+    message.innerText="Perdu ! Le nombre a deviner est " + nbADeviner ;
     message.style.color = "red";
 }
 function Gagner(){
